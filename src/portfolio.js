@@ -23,7 +23,7 @@ const greeting = {
   username: "Saad Pasta",
   title: "Hi all",
   subTitle: emoji(
-    "We are a Software Development teams 🚀 having an experience of building Mobile applications with Android Kotlin / IOS Swfit / Flutter and some other libraries and frameworks."
+    "We are a software development team with extensive experience. Our team is not only well-versed in the latest technologies but also committed to delivering high-quality products that meet our clients' needs and expectations. We are always ready to collaborate and transform your ideas into effective and innovative applications."
   ),
   resumeLink:
     "", // Set to empty to hide the button
@@ -37,7 +37,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/saadpasta/",
   gmail: "saadpasta70@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
+  // facebook: "https://www.facebook.com/saad.pasta7",
   // medium: "https://medium.com/@saadpasta",
   // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -48,8 +48,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "MOBILE DEVELOPMENT TEAMS WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What we do",
+  subTitle: "SOFTWARE DEVELOPMENT TEAMS WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
       "⚡ Craft engaging and intuitive User Interfaces (UI) and User Experiences (UX) for your native iOS and Android mobile applications"
@@ -75,8 +75,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-apple"
     },
     {
+      skillName: "swift",
+      fontAwesomeClassname: "fab fa-swift"
+    },
+    {
       skillName: "Flutter",
-      fontAwesomeClassname: "fa-brands fa-flutter"
+      fontAwesomeClassname: "fab fa-flutter"
     },
     {
       skillName: "JavaScript",
@@ -86,10 +90,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
+
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
@@ -140,7 +141,7 @@ const techStack = {
   experience: [
     {
       Stack: "Mobile", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
@@ -197,35 +198,24 @@ const openSource = {
 
 // Some big projects you have worked on
 
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+const projects = {
+  title: "Projects",
+  subtitle: "",
   projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
+    // {
+    //   image: require("./assets/images/saayaHealthLogo.webp"),
+    //   projectName: "Saayahealth",
+    //   projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    //   footerLink: [
+    //     {
+    //       name: "Visit Website",
+    //       url: "http://saayahealth.com/"
+    //     }
+    //     //  you can add extra buttons here.
+    //   ]
+    // },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -355,11 +345,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Us ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+84-349779362",
+  email_address: "tuantrinh488@gmail.com"
 };
 
 // Twitter Section
@@ -381,7 +371,7 @@ export {
   techStack,
   workExperiences,
   openSource,
-  bigProjects,
+  projects,
   achievementSection,
   blogSection,
   talkSection,

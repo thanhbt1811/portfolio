@@ -1,28 +1,16 @@
 import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import {
-  greeting,
-  workExperiences,
   skillsSection,
-  openSource,
-  blogSection,
-  talkSection,
-  achievementSection,
-  resumeSection, bigProjects
+  projects
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
-  const viewExperience = workExperiences.display;
-  const project = bigProjects.display;
+  const project = projects.display;
   const viewSkills = skillsSection.display;
-  const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
-  const viewResume = resumeSection.display;
 
   return (
     <Headroom>
@@ -31,8 +19,8 @@ function Header() {
           <img
             src={require("../../assets/images/logo.jpeg")}
             alt="Logo"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
           />
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -49,44 +37,13 @@ function Header() {
               <a href="#skills">Skills</a>
             </li>
           )}
-          {/*{viewExperience && (*/}
-          {/*  <li>*/}
-          {/*    <a href="#experience">Work Experiences</a>*/}
-          {/*  </li>*/}
-          {/*)}*/}
           {project && (
             <li>
-              <a href="#projects">Project</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
-          {/*{viewAchievement && (*/}
-          {/*  <li>*/}
-          {/*    <a href="#achievements">Achievements</a>*/}
-          {/*  </li>*/}
-          {/*)}*/}
-          {/*{viewBlog && (*/}
-          {/*  <li>*/}
-          {/*    <a href="#blogs">Blogs</a>*/}
-          {/*  </li>*/}
-          {/*)}*/}
-          {/*{viewTalks && (*/}
-          {/*  <li>*/}
-          {/*    <a href="#talks">Talks</a>*/}
-          {/*  </li>*/}
-          {/*)}*/}
-          {/*{viewResume && (*/}
-          {/*  <li>*/}
-          {/*    <a href="#resume">Resume</a>*/}
-          {/*  </li>*/}
-          {/*)}*/}
           <li>
-            <a href="#contact">Contact Me</a>
-          </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+            <a href="#contact">Contact Us</a>
           </li>
         </ul>
       </header>
