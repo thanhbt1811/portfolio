@@ -13,8 +13,8 @@ import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
 const Main = () => {
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  // const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
+  const [isDark, setIsDark] = useState(false);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
 
@@ -36,7 +36,7 @@ const Main = () => {
 
   return (
     <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{isDark: false, changeTheme: changeTheme}}>
+      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (
